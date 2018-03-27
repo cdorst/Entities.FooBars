@@ -1,8 +1,8 @@
 // Copyright © Christopher Dorst. All rights reserved.
 // Licensed under the GNU General Public License, Version 3.0. See the LICENSE document in the repository root for license information.
 
-using Position = Protobuf.ProtoMember;
-using ProtobufSerializable = Protobuf.ProtoContract;
+using Position = ProtoBuf.ProtoMember;
+using ProtoBufSerializable = ProtoBuf.ProtoContract;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 namespace Entities.FooBars
 {
     /// <summary>Contains the FooBar entity type</summary>
-    [ProtobufSerializable]
+    [ProtoBufSerializable]
     [Table("FooBars", Schema = "EntitiesFooBars")]
     public class FooBar : IEntity<int>
     {
