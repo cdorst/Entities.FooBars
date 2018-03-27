@@ -11,7 +11,7 @@ using System.Linq.Expressions;
 namespace Entities.FooBars
 {
     /// <summary>Contains the FooBar entity type</summary>
-    [ProtoContract]
+    [ProtobufSerializable]
     [Table("FooBars", Schema = "EntitiesFooBars")]
     public class FooBar : IEntity<int>
     {
