@@ -15,24 +15,25 @@ namespace Entities.FooBars
     [Table("FooBars", Schema = "EntitiesFooBars")]
     public class FooBar : IEntity<int>
     {
-        FooBar()
+        public FooBar()
         {
         }
 
-        FooBar(int Baz)
+        public FooBar(int Baz)
         {
-            Baz = baz}
+            Baz = baz;
+        }
 
         /// <summary>Contains Baz value</summary>
         [Position(2)]
-        int Baz { get; set; }
+        public int Baz { get; set; }
 
         /// <summary>FooBar unique identifier (primary key)</summary>
         [Key]
         [Position(1)]
-        int FooBarId { get; set; }
+        public int FooBarId { get; set; }
 
         /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier.</summary>
-        int GetEntityTypeId() => 5;
+        public int GetEntityTypeId() => 5;
     }
 }
