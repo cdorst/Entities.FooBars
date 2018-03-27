@@ -1,8 +1,9 @@
 // Copyright © Christopher Dorst. All rights reserved.
 // Licensed under the GNU General Public License, Version 3.0. See the LICENSE document in the repository root for license information.
 
-using Position = ProtoBuf.ProtoMember;
-using ProtoBufSerializable = ProtoBuf.ProtoContract;
+using DevOps.Code.Entities.Interfaces.Entity;
+using Position = ProtoBuf.ProtoMemberAttribute;
+using ProtoBufSerializable = ProtoBuf.ProtoContractAttribute;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,7 +20,7 @@ namespace Entities.FooBars
         {
         }
 
-        public FooBar(int Baz)
+        public FooBar(int baz)
         {
             Baz = baz;
         }
@@ -35,5 +36,8 @@ namespace Entities.FooBars
 
         /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier.</summary>
         public int GetEntityTypeId() => 5;
+
+        /// <summary>Returns the entity's unique identifier.</summary>
+        public int GetKey() => FooBarId;
     }
 }
