@@ -35,7 +35,7 @@ namespace Entities.FooBars
         public int FooBarId { get; set; }
 
         /// <summary>Returns a value that uniquely identifies this entity type. Each entity type in the model has a unique identifier.</summary>
-        public int GetEntityTypeId() => 5;
+        public int GetEntityType() => 5;
 
         /// <summary>Returns the entity's unique identifier.</summary>
         public int GetKey() => FooBarId;
