@@ -15,7 +15,7 @@
     <PackageLicenseUrl>https://github.com/cdorst/Entities.FooBars/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdorst/Entities.FooBars</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cdorst/Entities.FooBars</RepositoryUrl>
-    <Version>1.0.14</Version>
+    <Version>1.0.15</Version>
   </PropertyGroup>
 
   <ItemGroup>
